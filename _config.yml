@@ -1,9 +1,10 @@
-title: Xuechun (Leonie) Lu # your name (or website title) here
-logo: "/images/logo.jpg?raw=true" # your photo (or logo) here
+title: Leonie Lu # your name (or website title) here
+logo: "/images/logo.png?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
   Hi! My name is Leonie! I'm a MMath candidate in Statistics from University of Waterloo!
   <br><br>
   I'm a statistics nerd and super passionate about data science!
+  <br><br>
   <a href="https://www.linkedin.com/in/xuechun-lu/">View My LinkedIn Profile</a> 
   
 theme: jekyll-theme-minimal
