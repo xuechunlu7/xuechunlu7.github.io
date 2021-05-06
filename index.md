@@ -1,5 +1,3 @@
-[My CV is here!](/pdf/LU_resume.pdf)
-
 ## Portfolio
 
 ---

@@ -5,6 +5,8 @@ description: > # your text below (remove <br> elements if you don't need line br
   <br><br>
   I'm a statistics nerd and super passionate about data science!
   <br><br>
+  [My CV is here!](/pdf/LU_resume.pdf)
+  <br><br>
   <a href="https://www.linkedin.com/in/xuechun-lu/">View My LinkedIn Profile</a> 
   
 theme: jekyll-theme-minimal
