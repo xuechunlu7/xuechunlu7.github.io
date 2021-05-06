@@ -1,14 +1,13 @@
+[My CV is here!](/pdf/LU_resume.pdf)
+
 ## Portfolio
 
 ---
-[My CV is here!](/pdf/LU_resume.pdf)
 
----
+### Projects
 
-### Category Name 2
-
-[Set Classification Based on A histopathology Dataset](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Set Classification Based on A Histopathology Dataset](/sample_page)
+<img src="images/set classificaiton/patch.png?raw=true"/>
 
 ---
 [NLP - Sentence Ordering](/pdf/sample_presentation.pdf)

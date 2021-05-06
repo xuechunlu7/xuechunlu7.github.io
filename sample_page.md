@@ -16,17 +16,22 @@ classified efficiently without usage of too many computing resources!
 PointNet: PointNet is a deep architecture proposed to classify a 3D object that is formed by a point cloud. A point cloud is a set of points from an Euclidean space and has the three main properties: unordered, interaction among points, and invariant under transformations. A PointNet can classify the object by directly consuming the whole set of points, learning the deep
 representation of a 3D object through blocks of T-Net, and extracting their global features through max pooling.
 
-Densely Connected Convolutional Networks (DenseNet) Pre-trained DenseNet can draw discrimination power from intensive training with millions of non-medical images. Also, DenseNet topology is also referred by recent work as a reliable candidate solution for image representation in histopathology. Researchers in Kimia Lab have proposed to use a modified DenseNet as a feature extractor to extract features of histopathology images.
+Densely Connected Convolutional Networks (DenseNet): Pre-trained DenseNet can draw discrimination power from intensive training with millions of non-medical images. Also, DenseNet topology is also referred by recent work as a reliable candidate solution for image representation in histopathology. Researchers in Kimia Lab have proposed to use a modified DenseNet as a feature extractor to extract features of histopathology images.
 
 ### 3. Our models!
 
 #### 3.1 Patch-based Convolutional Neural Network (CNN)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/set classificaiton/model1.png?raw=true"/>
 
 #### 3.2 DenseNet + modified PointNet
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="mages/set classificaiton/model2.png?raw=true"/>
 
 ### 4. Result!
+<img src="mages/set classificaiton/model1 kimia net.png?raw=true"/>
+
+<img src="mages/set classificaiton/model1 aggregate.png?raw=true"/>
+
+<img src="mages/set classificaiton/model2 accuracy.png?raw=true"/>
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
 
