@@ -1,11 +1,11 @@
 title: Xuechun (Leonie) Lu # your name (or website title) here
 logo: "/images/logo.jpg?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  First description 
+  Hi! My name is Xuechun! I'm a MMath candidate in Statistics from University of Waterloo!
   <br><br>
-  Second description 
+  I'm passionate about data science! This is my first website and I include some of my projects (machine learning, NLP, etc) I've done during my master studies!
   <br><br>
-  <a href="https://www.linkedin.com/in/example/">View My LinkedIn Profile</a> 
+  <a href="https://www.linkedin.com/in/xuechun-lu/">View My LinkedIn Profile</a> 
   
 theme: jekyll-theme-minimal
 google_analytics: UA-000000-0 # your Google Analytics tracking ID here
