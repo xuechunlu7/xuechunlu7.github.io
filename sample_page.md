@@ -1,22 +1,21 @@
 ## Deep Learning - Set Classification Based on A Histopathology Dataset 
 
-**Task:** Given a set of lung tissue images generating from one whole slide, can you predict which lung cancer this patient have? 
+**Task:** Given a set of lung tissue images generating from one whole slide, can you predict which lung cancer (LUAD, LUSC, MESO) this patient have? 
 
-### 1. Motivation 
+### 1. Motivation - Why set classification? 
 
-Classification of high-resolution histopathology slides is one of the most popular yet challenging problems in the field of medical image analysis. Since the size of microscopic images is usually gigapixel, it is computationally infeasible to feed such a high-resolution histopathology slide directly into a deep neural network. 
+Classification of high-resolution histopathology slides is one of the most popular yet challenging problems in the field of medical image analysis! Since the size of microscopic images is usually gigapixel, it is computationally infeasible to feed an image like that directly into a deep neural network. 
 
-To tackle these issues, previous literature has proposed to process the input images as a set of smaller patches of a
-histopathology slide. In this way, a conventional image classification problem is converted to a set classification problem, and high-resolution histopathology slides can be
-classified efficiently without usage of too many computing resources!
+Since it is hard to directly feed a whole slide into a neural net, why don't we cut a slide into many pieces, call it a set, and then do a set classification?
 
 
-### 2. Inspring Idea!
+### 2. Inspring Ideas!
 
-PointNet: PointNet is a deep architecture proposed to classify a 3D object that is formed by a point cloud. A point cloud is a set of points from an Euclidean space and has the three main properties: unordered, interaction among points, and invariant under transformations. A PointNet can classify the object by directly consuming the whole set of points, learning the deep
-representation of a 3D object through blocks of T-Net, and extracting their global features through max pooling.
+PointNet: PointNet is a deep architecture that can classify a 3D object. Isn't our problem right now kinda similar to a 3D classfication problem? We have a set of order-invariant, permutation-invariant set of elements of an object to classify!
 
-Densely Connected Convolutional Networks (DenseNet): Pre-trained DenseNet can draw discrimination power from intensive training with millions of non-medical images. Also, DenseNet topology is also referred by recent work as a reliable candidate solution for image representation in histopathology. Researchers in Kimia Lab have proposed to use a modified DenseNet as a feature extractor to extract features of histopathology images.
+Densely Connected Convolutional Networks (DenseNet): DenseNet can draw discrimination power from images, and it is also reliable candidate solution for image representation in histopathology!
+
+KimiaNet: A modification of DenseNet! Researchers in Kimia Lab @ UWaterloo have proposed to use a modified DenseNet as a feature extractor to extract features of histopathology images!
 
 ### 3. Our models!
 
