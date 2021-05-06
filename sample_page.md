@@ -1,4 +1,4 @@
-## Set Classification Based on A Histopathology Dataset (Adapted from a project report for STAT 946 (Deep Learning)) 
+## Deep Learning - Set Classification Based on A Histopathology Dataset 
 
 **Task:** Given a set of lung tissue images generating from one whole slide, can you predict which lung cancer this patient have? 
 
@@ -24,14 +24,14 @@ Densely Connected Convolutional Networks (DenseNet): Pre-trained DenseNet can dr
 <img src="images/set classificaiton/model1.png?raw=true"/>
 
 #### 3.2 DenseNet + modified PointNet
-<img src="mages/set classificaiton/model2.png?raw=true"/>
+<img src="images/set classificaiton/model2.png?raw=true"/>
 
 ### 4. Result!
-<img src="mages/set classificaiton/model1 kimia net.png?raw=true"/>
+<img src="images/set classificaiton/model1 kimia net.png?raw=true"/>
 
-<img src="mages/set classificaiton/model1 aggregate.png?raw=true"/>
+<img src="images/set classificaiton/model1 aggregate.png?raw=true"/>
 
-<img src="mages/set classificaiton/model2 accuracy.png?raw=true"/>
+<img src="images/set classificaiton/model2 accuracy.png?raw=true"/>
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
 
