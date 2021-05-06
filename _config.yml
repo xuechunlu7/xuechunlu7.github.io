@@ -5,7 +5,7 @@ description: > # your text below (remove <br> elements if you don't need line br
   <br><br>
   I'm a statistics nerd and super passionate about data science!
   <br><br>
-  [My CV is here!](/pdf/LU_resume.pdf)
+  <a href="pdf/LU_resume.pdf">My CV!</a>
   <br><br>
   <a href="https://www.linkedin.com/in/xuechun-lu/">View My LinkedIn Profile</a> 
   
