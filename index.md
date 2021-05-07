@@ -11,5 +11,5 @@
 
 ---
 [Risk Prediction in Life Insurance Industry](/project3)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/umbrella.jpeg?raw=true"/>
 

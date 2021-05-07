@@ -32,11 +32,11 @@ We experimented two ways to select and extract features - Principle Component An
 ### 3. Models
 In this project, for each data set (PCA and CFS), we explored applying logistic regression, a single layer artifitial neural network, REP tree and random tree.
 
-**Logistic regression:** a natural choice for a multi-class classification problem!
+**Logistic Regression:** a natural choice for a multi-class classification problem!
 
 **Artificial Neural Network:** inspired by how animal brains operate biologically. It consists of three main parts, an input layer, hidden layers and an output layer, and each layer contains interconnected nodes, which are also known as perceptrons. A perceptron is similar to a neuron in animal brains, but here it simply takes a signal, performs a multiple linear regression, then puts the result into an activation function, and passes it to the next layer. It is powerful as they can recognize underlying relationships in a vast amount of data.
 
-**Reduced error Pruning Tree (REP tree):** A single tree model, which makes use of the “regression tree logic to create trees in different iterations, and it develops its model by information gain and variance deduciton. This type of decision tree only creates a single tree and it is pruned afterwards based on weight decay in order to avoid overfitting.
+**Reduced Error Pruning Tree (REP tree):** A single tree model, which makes use of the “regression tree logic to create trees in different iterations, and it develops its model by information gain and variance deduciton. This type of decision tree only creates a single tree and it is pruned afterwards based on weight decay in order to avoid overfitting.
 
 **Random Tree:** The idea of Random Tree is simple: it uses only a subset of the attributes in the dataset to build trees. In general, this type of decision tree is significantly efficient when the dataset is large.
 
