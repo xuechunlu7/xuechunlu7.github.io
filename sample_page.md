@@ -1,6 +1,6 @@
 ## Deep Learning - Set Classification Based on A Histopathology Dataset 
 
-**Task:** Given a set of lung tissue images generating from one whole slide, can you predict which lung cancer (LUAD, LUSC, MESO) this patient have? 
+**Task:** Given a set of lung tissue patches generating from one whole slide of a patient, can you identify which lung cancer (LUAD, LUSC, MESO) this patient has? 
 
 ### 1. Motivation - Why set classification? 
 
@@ -15,23 +15,37 @@ PointNet: PointNet is a deep architecture that can classify a 3D object. Isn't o
 
 Densely Connected Convolutional Networks (DenseNet): DenseNet can draw discrimination power from images, and it is also reliable candidate solution for image representation in histopathology!
 
-KimiaNet: A modification of DenseNet! Researchers in Kimia Lab @ UWaterloo have proposed to use a modified DenseNet as a feature extractor to extract features of histopathology images!
+KimiaNet: A modified DenseNet. Used as a feature extractor to extract features of histopathology images!
 
 ### 3. Our models!
 
 #### 3.1 Patch-based Convolutional Neural Network (CNN)
+Set classification sounds difficult. We don't know how to do that, but what we are familiar with is to use a CNN (e.g. KimiaNet) to classify objects! Why can't we use CNN to classify each patch and then aggregate the results for each set in the very end? 
+
+Below is a model we proposed. For each patch in each set, a CNN will produce a set of probabilities of which class a patch belonging to. We can take average or maximum of all probs, take argmax, and see which class the set belongs to.
+
 <img src="images/set classificaiton/model1.png?raw=true"/>
 
-#### 3.2 DenseNet + modified PointNet
-<img src="images/set classificaiton/model2.png?raw=true"/>
+Below is the performance of KimiaNet on patch-level prediction. You see, the validation accuracy is not good, right?
 
-### 4. Result!
 <img src="images/set classificaiton/model1 kimia net.png?raw=true"/>
+
+What if now we try aggregate the results and make predictions on set-level?
 
 <img src="images/set classificaiton/model1 aggregate.png?raw=true"/>
 
+Wow! A big improvement! We see when using average to aggregate the results, the accuracy achieves 85%!
+
+#### 3.2 KimiaNet + modified PointNet
+Now, we want to do something more creative!
+
+We are very inspired by the idea of PointNet. Just recall, a PointNet is a deep architecture that can learn the deep representation of 3D object. In both of their case and our case, our target object (a set) consists of many elements that are order-invariant and permutation invariant! Why can't we borrow their idea and apply it to our case?
+
+Alright! We first used KimiaNet to extract deep features of each patch for each set, and then pass the whole set of features to a PointNet-like deep neural network! The architecture is shown below!
+
+<img src="images/set classificaiton/model2.png?raw=true"/>
+
+Let's see the performance! 
 <img src="images/set classificaiton/model2 accuracy.png?raw=true"/>
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+We see when the size of our network is 512, the accuracy is 90%! That's encouraging!
