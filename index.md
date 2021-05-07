@@ -2,9 +2,7 @@
 
 ---
 
-### Projects!
-
-[Deep Learning - Set Classification Based on A Histopathology Dataset](/sample_page)
+[Deep Learning - Set Classification Based on A Histopathology Dataset](/project1)
 <img src="images/set classificaiton/patch.png?raw=true"/>
 
 ---
