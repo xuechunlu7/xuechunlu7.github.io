@@ -1,6 +1,6 @@
 ## Deep Learning - Set Classification Based on A Histopathology Dataset 
 
-**Task:** Given a set of lung tissue patches generating from one whole slide of a patient, can you identify which lung cancer (LUAD, LUSC, MESO) this patient has? 
+**Task:** Given a set of lung tissue patches generated from one whole slide of a patient, can you identify which lung cancer (LUAD, LUSC, MESO) this patient has? 
 
 ### 1. Motivation - Why set classification? 
 
@@ -48,4 +48,4 @@ Alright! We first used KimiaNet to extract deep features of each patch for each 
 Let's see the performance! 
 <img src="images/set classificaiton/model2 accuracy.png?raw=true"/>
 
-We see when the size of our network is 512, the accuracy is 90%! That's encouraging!
+We see when the size of our network is 512, the accuracy is 90%! That's very encouraging! We made it!

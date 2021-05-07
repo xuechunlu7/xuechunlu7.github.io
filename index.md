@@ -6,7 +6,7 @@
 <img src="images/set classificaiton/patch.png?raw=true"/>
 
 ---
-[Natural Language Processing - Sentence Ordering](/pdf/sample_presentation.pdf)
+[Natural Language Processing - Sentence Ordering](/project2)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
