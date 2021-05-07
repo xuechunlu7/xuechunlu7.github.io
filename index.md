@@ -10,6 +10,6 @@
 <img src="images/stones.jpeg?raw=true"/>
 
 ---
-[Risk Prediction in Life Insurance Industry](http://example.com/)
+[Risk Prediction in Life Insurance Industry](/project3)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
