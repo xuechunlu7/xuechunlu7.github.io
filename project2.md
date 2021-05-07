@@ -5,12 +5,12 @@
 An example:
 Given a set of sentences like below... Can you predict the correct order of these sentences?
 
-0. In 2016, Bailey ran for mayor of Portland, losing to Ted Wheeler.
-1. Jules Bailey (born November, 1979) is a former Multnomah County Commissioner who now works at the Oregon Beverage Recycling Cooperative.
-2. He served in the Oregon House of Representatives from 2009 to 2014, representing inner Southeast and Northeast Portland, and on the County Commission for Multnomah County, Oregon from June 2014 to December 2016.
-3. He earned a bachelor's degree in  Lewis & Clark College and received MPA/URP from Princeton University\n\nBailey studied in a dual-degree graduate program at Princeton University's Woodrow Wilson School of Public and International Affairs.
-4. In January 2017, he began working for the Oregon Beverage Recycling Cooperative as the chief stewardship officer.
-5. Early life and education \nBailey was raised in Portland, Oregon and graduated from Lincoln High School.
+In 2016, Bailey ran for mayor of Portland, losing to Ted Wheeler.
+Jules Bailey (born November, 1979) is a former Multnomah County Commissioner who now works at the Oregon Beverage Recycling Cooperative.
+He served in the Oregon House of Representatives from 2009 to 2014, representing inner Southeast and Northeast Portland, and on the County Commission for Multnomah County, Oregon from June 2014 to December 2016.
+He earned a bachelor's degree in  Lewis & Clark College and received MPA/URP from Princeton University\n\nBailey studied in a dual-degree graduate program at Princeton University's Woodrow Wilson School of Public and International Affairs.
+In January 2017, he began working for the Oregon Beverage Recycling Cooperative as the chief stewardship officer.
+Early life and education \nBailey was raised in Portland, Oregon and graduated from Lincoln High School.
 
 **Answer:** [2, 0, 1, 5, 3, 4]
 
@@ -30,9 +30,9 @@ Finally, I figured it out.
 
 For each set of six sentences, generate 6 chooses 2 (15) sentence pairs. Each pair is fed into a BertForSequenceClassification model and a binary label (1 if sentence 1 comes first, 0 otherwise) is produced in the end. For each set, we are gonna have a sequence of 15 binary labels. With this sequence, we can figure it out the correct order of these sentences by using a topological sort. 
 
-Topological sort is a type of graph sort. We first create a graph with six vertices and then add directed edges between the edges according to the binary label. Once all the 15 labels are entered, the graph becomes a fully connected and directed graph. With this graph, we can sort out the order eventually. 
+Topological sort is a type of graph sort. We first create a graph with six vertices and then add directed edges between the corresponding vertices according to the binary label. Once all the 15 labels are entered, the graph becomes a fully connected and directed graph! With this graph, we can sort out the order eventually. 
 
-The example code of how to use [BERT embeddings for sentences]('notebook/Bert Data Embedding and Implementation of Topological Sort.ipynb'):
+The example code of how to use [BERT embeddings for sentences]('https://github.com/xuechunlu7/STAT946/blob/master/DC2/src/Bert_Data_Embedding_and_Implementation_of_Topological_Sort.ipynb'):
 
 ```
 def bert_tokenization(dataset):
@@ -88,7 +88,7 @@ def bert_tokenization(dataset):
   return input_ids, attention_masks, token_type_ids, labels
 ```
 
-The example code of [topological sort]('notebook/bert_sequence.ipynb'):
+The example code of [topological sort]('https://github.com/xuechunlu7/STAT946/blob/master/DC2/src/bert_sequence.ipynb'):
 
 
 ```
