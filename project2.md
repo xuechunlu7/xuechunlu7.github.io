@@ -5,12 +5,12 @@
 An example:
 Given a set of sentences like below... Can you predict the correct order of these sentences?
 
-In 2016, Bailey ran for mayor of Portland, losing to Ted Wheeler.
-Jules Bailey (born November, 1979) is a former Multnomah County Commissioner who now works at the Oregon Beverage Recycling Cooperative.
-He served in the Oregon House of Representatives from 2009 to 2014, representing inner Southeast and Northeast Portland, and on the County Commission for Multnomah County, Oregon from June 2014 to December 2016.
-He earned a bachelor's degree in  Lewis & Clark College and received MPA/URP from Princeton University\n\nBailey studied in a dual-degree graduate program at Princeton University's Woodrow Wilson School of Public and International Affairs.
-In January 2017, he began working for the Oregon Beverage Recycling Cooperative as the chief stewardship officer.
-Early life and education \nBailey was raised in Portland, Oregon and graduated from Lincoln High School.
+- In 2016, Bailey ran for mayor of Portland, losing to Ted Wheeler.
+- Jules Bailey (born November, 1979) is a former Multnomah County Commissioner who now works at the Oregon Beverage Recycling Cooperative.
+- He served in the Oregon House of Representatives from 2009 to 2014, representing inner Southeast and Northeast Portland, and on the County Commission for Multnomah County, Oregon from June 2014 to December 2016.
+- He earned a bachelor's degree in  Lewis & Clark College and received MPA/URP from Princeton University\n\nBailey studied in a dual-degree graduate program at Princeton University's Woodrow Wilson School of Public and International Affairs.
+- In January 2017, he began working for the Oregon Beverage Recycling Cooperative as the chief stewardship officer.
+- Early life and education \nBailey was raised in Portland, Oregon and graduated from Lincoln High School.
 
 **Answer:** [2, 0, 1, 5, 3, 4]
 
