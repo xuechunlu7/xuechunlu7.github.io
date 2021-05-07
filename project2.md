@@ -32,7 +32,7 @@ For each set of six sentences, generate 6 chooses 2 (15) sentence pairs. Each pa
 
 Topological sort is a type of graph sort. We first create a graph with six vertices and then add directed edges between the corresponding vertices according to the binary label. Once all the 15 labels are entered, the graph becomes a fully connected and directed graph! With this graph, we can sort out the order eventually. 
 
-The example code of how to use [BERT embeddings for sentences]('https://github.com/xuechunlu7/STAT946/blob/master/DC2/src/Bert_Data_Embedding_and_Implementation_of_Topological_Sort.ipynb'):
+The example code of how to use [BERT embeddings for sentences](https://github.com/xuechunlu7/STAT946/blob/master/DC2/src/Bert_Data_Embedding_and_Implementation_of_Topological_Sort.ipynb):
 
 ```
 def bert_tokenization(dataset):
@@ -88,7 +88,7 @@ def bert_tokenization(dataset):
   return input_ids, attention_masks, token_type_ids, labels
 ```
 
-The example code of [topological sort]('https://github.com/xuechunlu7/STAT946/blob/master/DC2/src/bert_sequence.ipynb'):
+The example code of [topological sort](https://github.com/xuechunlu7/STAT946/blob/master/DC2/src/bert_sequence.ipynb):
 
 
 ```

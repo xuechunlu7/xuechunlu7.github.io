@@ -7,7 +7,7 @@
 
 ---
 [Natural Language Processing - Sentence Ordering](/project2)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/stones.jpeg?raw=true"/>
 
 ---
 [Risk Prediction in Life Insurance Industry](http://example.com/)
